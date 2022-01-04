@@ -17,13 +17,19 @@ export async function post() {
           street
           creditCard
           stateProvince
+          weather {
+            temp
+          }
+        }
+        delivery(carrier: "ups", trackingId: "1ZY762A8A895521283") {
+          status
+          statusDate
         }
       }`
     })
   })
 
   const data = await response.json()
-  console.log(data)
   
   if (data) {
     return {
