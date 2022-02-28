@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="block-content">
-          <img src="/images/dev-art-json2sdl.png" alt="code-demo" />
+          <img src="/images/dev-art-demo.png" alt="code-demo" />
         </div>
       </div>
     </div>
