@@ -36,8 +36,9 @@
           <h3>Here is your delivery information:</h3>
           <div class="highlights-list">
             {#each data.customerByEmail.orders as {
-              createdOn, carrier, delivery
+              createdOn, carrier, delivery, id
             }}
+            <h4>Delivery ID #{id}</h4>
               <ul>
                 <li>
                   <p>

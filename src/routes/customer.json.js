@@ -14,6 +14,7 @@ export async function post() {
           name
           city
           orders {
+            id
             createdOn
             carrier
             delivery {
