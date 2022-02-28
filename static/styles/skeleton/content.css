@@ -1,0 +1,68 @@
+.content h2,
+.content h3 {
+  margin-top: 2.5rem;
+  font-weight: var(--weight-medium);
+}
+
+.content figcaption {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.content hr {
+  display: block;
+  border: none;
+  border-top: 2px solid #DDD;
+}
+
+.content .eyebrow + h2,
+.content .eyebrow + h3 {
+  margin-top: 0.25rem;
+}
+
+.content .eyebrow {
+  margin-top: 2rem;
+}
+
+.content > * + *:not([class*="mt-"], h2, h3) {
+  margin-top: 2rem;
+}
+
+.content ul li + li,
+.content ol li + li {
+  margin-top: .5rem;
+}
+
+.content figure,
+.content hr,
+.content .code-snippet{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* !!! */
+.content code {
+  display: inline-block;
+  padding: 0 4px;
+  border-radius: 3px;
+  background-color: #e2f6fc;
+}
+
+pre[class*="language-"] {
+  margin: 0;
+}
+
+.content :not(pre) > code[class*="language-"],
+.content pre[class*="language-"] {
+  border-radius: 2px;
+  background-color: #F7FDFF;
+  border: 1px solid #DEDFE0;
+}
+
+.content pre[class*="language-"] > code {
+  background-color: transparent;
+}
+
+

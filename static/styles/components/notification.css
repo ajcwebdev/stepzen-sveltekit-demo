@@ -1,0 +1,80 @@
+.notification {
+  position: fixed;
+  left: 50%;
+  bottom: 10px;
+  z-index: 10;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  margin: 0 auto;
+  width: calc(100% - (var(--gutter) * 2));
+  max-width: var(--max-width);
+  padding: calc(var(--spacer-half) / 2) var(--gutter);
+  border-radius: 4px;
+  background: var(--color2);
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.notification > * {
+  margin-top: calc(var(--spacer-half) / 2);
+  margin-bottom: calc(var(--spacer-half) / 2);
+}
+
+.notification-message a {
+  color: #fff;
+}
+
+.notification-message a:hover {
+  text-decoration: none;
+}
+
+.notification-message > *:last-child {
+  margin-bottom: 0;
+}
+
+.notification-cookies {
+  z-index: 1100000;
+  max-width: 90ch;
+  box-shadow: var(--card-box-shadow);
+}
+
+.notification-header {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  transform: none;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0;
+
+  font-size: 1rem;
+}
+
+.notification-header > div {
+  margin-right: 1rem;
+}
+
+.notification-header > div strong {
+  display: inline-block;
+  margin-right: .5rem;
+}
+
+@media (min-width: 600px) {
+  .notification-message {
+    flex: 1;
+    margin-right: auto;
+    padding-right: var(--gap);
+  }
+}

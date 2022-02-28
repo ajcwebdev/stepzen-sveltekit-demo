@@ -1,13 +1,15 @@
-import 'dotenv/config'
+import "dotenv/config";
 
 export async function post() {
-  const response = await fetch("https://demo.stepzen.net/api/basicdemo/__graphql", {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      query: `{
+  const response = await fetch(
+    "https://demo.stepzen.net/api/basicdemo/__graphql",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query: `{
         customerByEmail(email: "john.doe@example.com") {
           name
           city
@@ -23,15 +25,16 @@ export async function post() {
             temp
           }   
         }
-      }`
-    })
-  })
+      }`,
+      }),
+    }
+  );
 
-  const data = await response.json()
-  
+  const data = await response.json();
+
   if (data) {
     return {
-      body: data
-    }
+      body: data,
+    };
   }
 }

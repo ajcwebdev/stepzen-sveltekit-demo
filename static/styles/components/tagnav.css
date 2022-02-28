@@ -1,0 +1,34 @@
+.tag-nav,
+.tag-nav ul {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  gap: calc(var(--spacer-half) / 2);
+}
+
+.tag-nav {
+  margin-bottom: var(--spacer);
+}
+
+.tag-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tag-nav li {
+  list-style: none;
+}
+
+.tag-nav.centered ul {
+  justify-content: center;
+}
+
+.tag-nav.large span {
+  padding-right: 1.35rem;
+  padding-left: 1.35rem;
+  font-size: 1.2rem;
+}
+
+.tag-nav-headline + .tag-nav {
+  margin-top: 0;
+}

@@ -1,0 +1,63 @@
+.banner-card {
+  padding: var(--spacer);
+  border-radius: var(--elem-radius);
+  background-color: var(--color3);
+  color: #FFF;
+}
+
+.banner-card .card-header {
+  text-align: center;
+}
+
+.banner-card .card-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: calc(var(--gap) / 3); /* ! R ! */
+  margin: 0 auto;
+}
+
+.banner-card .card-header,
+.banner-card .card-footer {
+  padding: 0;
+}
+
+.banner-card .card-header {
+  max-width: 540px;
+}
+
+.banner-card .card-heading {
+  margin-bottom: 0.3rem;
+  font-size: 1.8rem;
+}
+
+.banner-card .card-footer {
+  display: flex;
+  place-content: center;
+}
+
+.banner-card .button > span {
+  --btn-bg: var(--color2);
+  --btn-color: #fff;
+  --btn-border: var(--btn-bg);
+
+  height: 50px;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  font-size: 1.2rem;
+}
+
+/* ! R ! */
+.banner-card .button {
+  transform: translateY(4px);
+}
+
+@media (min-width: 768px) {
+  .banner-card .card-wrap {
+    gap: var(--gap);
+  }
+
+  .banner-card .card-header {
+    text-align: left;
+  }
+}

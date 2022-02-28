@@ -1,0 +1,30 @@
+.callout {
+  padding: 2rem 1.5rem;
+  border-radius: 30px 0 30px 0;
+  background-color: var(--color14);
+  border-left: 6px solid var(--color4);
+}
+
+.callout-lead {
+  font-size: 1.2rem;
+  font-weight: var(--weight-medium);
+}
+
+.callout > *:first-child {
+  margin-top: 0;
+}
+
+.callout > *:last-child {
+  margin-bottom: 0;
+}
+
+
+@media (min-width: 768px) {
+  .callout  {
+    padding: 2rem 5rem 2rem 2.5rem;
+  }
+
+  .callout > * {
+    max-width: 90%;
+  }
+}

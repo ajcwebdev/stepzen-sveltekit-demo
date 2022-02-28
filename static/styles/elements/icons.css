@@ -1,0 +1,70 @@
+.icon {
+  --size: 1em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  width: var(--size);
+  height: var(--size);
+}
+
+/* Special instance where we have a wrapper */
+
+.icon.small {
+  --size: 1.8rem;
+}
+
+.icon.medium {
+  --size: 2.6rem;
+}
+
+.icon.large {
+  --size: 5rem;
+}
+
+.icon.xlarge {
+  --size: 8rem;
+}
+
+.icon.highlight {
+  border-radius: 50%;
+  background: #f2f2f2;
+}
+
+.icon.highlight img,
+.icon.highlight svg {
+  max-width: 76%;
+}
+
+.icon-mask {
+  background-color: var(--font-color);
+  mask-repeat: no-repeat;
+}
+
+.icon-handheart {
+  mask-image: url(/images/icons/kit/handheart.svg);
+}
+
+.icon-barchart {
+  mask-image: url(/images/icons/kit/barchart.svg);
+}
+
+.icon-grid {
+  mask-image: url(/images/icons/kit/grid.svg);
+}
+
+.icon-computermobile {
+  mask-image: url(/images/icons/kit/computermobile.svg);
+}
+
+.icon-lockshield {
+  mask-image: url(/images/icons/kit/lockshield.svg);
+}
+
+.icon-lightning {
+  mask-image: url(/images/icons/kit/lightning.svg);
+}
+
+.icon-server {
+  mask-image: url(/images/icons/kit/server.svg);
+}

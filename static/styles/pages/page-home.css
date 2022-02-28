@@ -1,0 +1,24 @@
+.page-home .banner-card {
+   margin: 0 auto;
+  padding: var(--spacer);
+  max-width: 700px;
+}
+
+.feature-block {
+  background-color: var(--color14);
+}
+
+.feature-block .card-headline {
+  font-size: 1.35rem;
+  font-weight: var(--weight-medium);
+  line-height: 1.35;
+  color: var(--color1);
+}
+
+.feature-block .card-header {
+  padding: 2.5rem 2.25rem;
+}
+
+.page-home .media-block h2 {
+  max-width: 27ch;
+}

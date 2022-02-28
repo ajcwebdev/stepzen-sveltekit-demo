@@ -1,0 +1,33 @@
+.loading-overlay {
+  background-color: var(--color14);
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  place-content: center;
+  width: 100vw;
+}
+
+.loading-overlay .logo {
+  animation-direction: alternate;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.95, 0.05, 0.8, 0.05);
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.loading-overlay p {
+  padding-top: 20px;
+  text-align: center;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(20px) scale(1, 0.7);
+  }
+}

@@ -1,0 +1,67 @@
+a {
+  color: var(--color3);
+}
+
+a:hover,
+a:active {
+  color: var(--color4);
+}
+
+.link-more {
+  display: inline-flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color3);
+  transition: var(--anim);
+}
+
+.link-more:hover {
+  color: var(--color7);
+  opacity: 0.7;
+}
+
+.link-more:after {
+  display: inline-block;
+  height: 0.75rem;
+  width: 1rem;
+  margin-left: 0.5ch;
+  align-self: center;
+  vertical-align: middle;
+  background-color: currentColor;
+
+  mask-image: url(/images/caret.svg);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+
+  content: "";
+}
+
+p + .link-more {
+  margin-top: var(--spacer);
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.icon-link .icon {
+  margin-right: 1ch;
+  width: auto;
+  height: 1.8rem;
+}
+
+.icon-link:hover > span {
+  text-decoration: underline;
+}
+
+.button .icon-link:hover > span {
+  text-decoration: none;
+}
+
+p > .icon-link {
+  margin-left: 1ch;
+}
