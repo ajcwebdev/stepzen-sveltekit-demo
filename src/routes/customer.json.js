@@ -1,7 +1,7 @@
 import 'dotenv/config'
 
 export async function post() {
-  const response = await fetch("https://demo.stepzen.net/api/meetup/__graphql", {
+  const response = await fetch("https://demo.stepzen.net/api/basicdemo/__graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -9,21 +9,19 @@ export async function post() {
     body: JSON.stringify({
       query: `{
         customerByEmail(email: "john.doe@example.com") {
-          postalCode
-          countryRegion
-          city
-          email
           name
-          street
-          creditCard
-          stateProvince
+          city
+          orders {
+            createdOn
+            carrier
+            delivery {
+              status
+              statusDate
+            }
+          }
           weather {
             temp
-          }
-        }
-        delivery(carrier: "ups", trackingId: "1ZY762A8A895521283") {
-          status
-          statusDate
+          }   
         }
       }`
     })
