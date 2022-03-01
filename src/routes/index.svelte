@@ -28,12 +28,12 @@
       <h2 class="weight-medium">
         StepZen Demo
       </h2>
-      <p>Hello <b>{data.customerByEmail.name}</b>, you are currently in <b>{data.customerByEmail.city}</b> and the temperature is <b>{data.customerByEmail.weather.temp}</b> degrees.</p>
+      <p>Hello <b class="shipping_detail">{data.customerByEmail.name}</b>, you are currently in <b class="shipping_detail">{data.customerByEmail.city}</b> and the temperature is <b class="shipping_detail">{data.customerByEmail.weather.temp}</b> degrees.</p>
     </div>
     <div class="container">
       <div class="grid">
         <div class="block-header">
-          <h3>Here is your delivery information:</h3>
+          <h2>Here is your delivery information:</h2>
           <div class="highlights-list">
             {#each data.customerByEmail.orders as {
               createdOn, carrier, delivery, id
@@ -42,17 +42,17 @@
               <ul>
                 <li>
                   <p>
-                    Carrier is <b>{carrier}</b>
+                    Carrier is <b class="shipping_detail">{carrier}</b>
                   </p>
                 </li>
                 <li>
                   <p>
-                    Delivery created on <b>{createdOn}</b>
+                    Delivery created on <b class="shipping_detail">{createdOn}</b>
                   </p>
                 </li>
                 <li>
                   <p>
-                    Delivery status is <b>{delivery.status}</b> on <b>{delivery.statusDate}</b>
+                    Delivery status is <b class="shipping_detail">{delivery.status}</b> on <b class="shipping_detail">{delivery.statusDate}</b>
                   </p>
                 </li>
               </ul>
@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="block-content">
-          <img src="/images/dev-art-demo.png" alt="code-demo" />
+          <img src="/images/package_location.png" alt="code-demo" />
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@ ul.highlights-list {
 
 .highlights-list li:before {
   position: absolute;
-  top: -5px;
+  top: 0;
   left: 0;
   display: block;
   width: 34px;
